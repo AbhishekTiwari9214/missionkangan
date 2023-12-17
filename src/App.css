@@ -1,0 +1,55 @@
+/* Add your styles here */
+.app-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.slideshow-container {
+  position: relative;
+  height:200px;
+  max-height: 400px; /* Set the maximum height for the slideshow */
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%; /* Make the images fill the container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.slide.active {
+  display: block;
+}
+
+.info-div {
+  font-family: fantasy;
+  font-weight: bold;
+  text-shadow: 7px 8px 8px black;
+  font-size: 21px;
+  text-align: center;
+  padding: 9px;
+  border-radius: 9px;
+  background-color: #f2f2f2;
+  margin-top: 12px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-item {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.product-item.two-column {
+  width: 48%;
+}
+
+/* Add more responsive styles as needed */
+ 
