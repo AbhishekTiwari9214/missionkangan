@@ -5,8 +5,17 @@ import './home.css';
 import ProductModal from './ProductModal';
 
 const Home = ({ productList }) => {
+  const [currentSlide, setCurrentSlide] = useState(0);
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
+  const nextSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide + 1) % productList.length);
+  };
+
+  // useEffect(() => {
+  //   const interval = setInterval(nextSlide, 3000);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   const openModal = (product) => {
     setSelectedProduct(product);
@@ -20,6 +29,22 @@ const Home = ({ productList }) => {
 
   return (
     <div>
+      {/* <div className="slideshow-container">
+        {productList.map((product, index) => (
+          <div
+            key={product.id}
+            className={`slide ${index === currentSlide ? 'active' : ''}`}
+          >
+            <img src={product.url1} alt={`Product ${product.id}`} />
+          </div>
+        ))}
+      </div> */}
+
+      {/* Small Info Div */}
+      <div className="info-div">
+        {/* Add your website information here */}
+        <p>Comming Soon</p>
+      </div>
       <div className="product-list">
         {productList.map((product, index) => (
           <div
