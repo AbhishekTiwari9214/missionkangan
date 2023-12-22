@@ -51,5 +51,12 @@
   width: 48%;
 }
 
+.navtoggle{
+width: 50px;
+height: 50px;
+margin: 10px;
+position: fixed;
+z-index: 12;
+}
 /* Add more responsive styles as needed */
  

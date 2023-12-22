@@ -9,7 +9,8 @@ console.log('hello');
   return (
 <div className='video'>
        
-        <iframe className='videoplay' src={video.link} frameborder="0"  onClick={handleClick}></iframe>
+        <iframe className='videoplay' src={video.link} frameBorder="0"  onClick={handleClick}/>
+           
     </div>
   )
 }

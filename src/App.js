@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css';
 import Home from './Home';
 import MobileNavbar from './MobileNavbar';
@@ -24,12 +24,12 @@ const App = () => {
         <button className="navtoggle" onClick={changenav}>
           nav
         </button>
-        {/* Integrate the MobileNavbar component here */}
+        
         {nav && <MobileNavbar onClose={changenav}/>}
 
         <Routes>
-            <Route exact path="/reels" element={<Reels videos={reels}/>} />
-          <Route exact path="/" element={<Home productList={productList} />}>
+            <Route exact path="/reels" element={!nav && <Reels videos={reels}/>} />
+          <Route exact path="/" element={!nav &&  <Home productList={productList} />}>
             
             <Route path="*" element={<div>Not Found</div>} />
           </Route>
