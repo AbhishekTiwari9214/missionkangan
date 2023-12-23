@@ -1,6 +1,5 @@
 .mobilenav{
   color: white;
-  margin-top: 100px;
   background-color: black;
   display: flex;
   flex-direction: column;
@@ -11,6 +10,7 @@
 
 .navContent{
   text-decoration: none;
+  margin-top: 100px;
   color: white;
   width: 100%;
   display: flex;

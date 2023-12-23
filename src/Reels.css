@@ -10,6 +10,6 @@
   position: -webkit-sticky;
   top: 0;
   scroll-snap-align: start;
-  width: 100%;
+  width: 100vh;
   height: 100vh; 
 }

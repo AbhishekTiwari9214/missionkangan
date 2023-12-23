@@ -26,6 +26,7 @@ const App = () => {
         </button>
         
         {nav && <MobileNavbar onClose={changenav}/>}
+        
 
         <Routes>
             <Route exact path="/reels" element={!nav && <Reels videos={reels}/>} />

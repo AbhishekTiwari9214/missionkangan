@@ -10,7 +10,6 @@ const ProductModal = ({ isOpen, onRequestClose, selectedProduct }) => {
   const [currentImage, setCurrentImage] = useState("");
 
   const closeModal = () => {
-    
     setModalIsOpen(false);
   };
   const handleImageClick = (imageUrl) => {
