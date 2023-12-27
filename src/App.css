@@ -5,11 +5,7 @@
 }
 
 .slideshow-container {
-<<<<<<< HEAD
-  position: relative;
-=======
   /* position: relative; */
->>>>>>> main
   height:200px;
   max-height: 400px; /* Set the maximum height for the slideshow */
   overflow: hidden;
@@ -55,8 +51,6 @@
   width: 48%;
 }
 
-<<<<<<< HEAD
-=======
 .navimg{
   display: flex;
   justify-content: flex-end;
@@ -73,6 +67,5 @@
   border-radius: 31px;
   /* z-index: 14; */
 }
->>>>>>> main
 /* Add more responsive styles as needed */
  
