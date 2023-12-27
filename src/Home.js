@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import './home.css';
+import { Link } from 'react-router-dom';
 import ProductModal from './ProductModal';
 
 const Home = ({ productList }) => {
@@ -55,7 +56,9 @@ const Home = ({ productList }) => {
             <img src={product.url1} alt={`Product ${product.id}`} />
           </div>
         ))}
+
       </div>
+      <Link to="/reels"   className='redirectReelFromHome'><p>Reels</p></Link>
 
       {/* Use the ProductModal component */}
       <div className='openmodal'>

@@ -8,16 +8,19 @@ const MobileNavbar = (onClose) => {
   return (
     <div className='mobilenav'>
       <div className='navContent'>
-        <p>
-
-            <Link to="/" className='hello'  onClick={onClose}>Home</Link>
+    
 
 
-        </p >
-<p>
-            <Link to="/reels"  className='hello' onClick={onClose}>Reels</Link>
+
+      <Link to="/profile"  className='hello' onClick={onClose}><p>Profile</p></Link>
+
+            <Link to="/" className='hello'  onClick={onClose}><p>Home</p></Link>
+
+
+        
+            <Link to="/reels"  className='hello' onClick={onClose}><p>Reels</p></Link>
   
-  </p>        
+     
           
           
           
