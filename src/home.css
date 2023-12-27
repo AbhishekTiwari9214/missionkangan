@@ -35,6 +35,26 @@
     }
   }
 
+<<<<<<< HEAD
+=======
+  .redirectReelFromHome{
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    background-color: blue;
+    border-radius: 19px;
+    justify-content: center;
+    color: white;
+    text-decoration: inherit;
+    position: fixed;
+    /* z-index: 12; */
+    margin: 15px;
+    bottom: 20px;
+    margin: 0px 50% 23px 35%;
+  }
+
+>>>>>>> main
   .openmodal{
     overflow: hidden;
     height: 100%;

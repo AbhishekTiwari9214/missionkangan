@@ -1,4 +1,8 @@
 .product-modal {
+<<<<<<< HEAD
+=======
+  z-index: 13;
+>>>>>>> main
   overflow: hidden;   
   position: relative;
   top: 50%;
